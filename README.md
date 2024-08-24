@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Random Password Generator
 
-## Getting Started
+A simple yet powerful tool to generate strong, random passwords based on user-selected criteria, ensuring security for your accounts and data.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Random Password Generator](#random-password-generator)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Password Options](#password-options)
+  - [Built With](#built-with)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Customizable Length**: Choose the desired length of the password.
+- **Character Options**: Include or exclude lowercase letters, uppercase letters, numbers, and symbols.
+- **Copy to Clipboard**: Easily copy the generated password with one click.
+- **Secure Generation**: Uses a cryptographically secure random number generator to ensure strong passwords.
+- **User-Friendly Interface**: Simple, sleek and clean design for easy use.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Password Options
 
-## Learn More
+- **Length**: Adjust the length of the password (default: 12 characters).
+- **Characters**:
+  - **Lowercase**: Include lowercase letters (a-z).
+  - **Uppercase**: Include uppercase letters (A-Z).
+  - **Numbers**: Include numbers (0-9).
+  - **Symbols**: Include special characters (!@#$%^&* etc.).
 
-To learn more about Next.js, take a look at the following resources:
+## Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Next.js** - A JavaScript library for building user interfaces.
+- **Tailwind CSS** - A utility-first CSS framework for rapidly building custom designs.
