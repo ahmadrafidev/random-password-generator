@@ -55,7 +55,7 @@ export default function RandomPasswordGenerator() {
   }
   
   return (
-    <Card className="w-full max-w-md mx-auto">
+    <Card className="w-full md:max-w-md mx-auto">
       <CardHeader>
         <CardTitle className="text-2xl font-bold text-center">Random Password Generator</CardTitle>
       </CardHeader>
