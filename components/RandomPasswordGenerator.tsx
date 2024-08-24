@@ -103,7 +103,7 @@ export default function RandomPasswordGenerator() {
               <div className="mt-2">
                 <Label htmlFor="generated-password">
                   Needed to check your password strength? Go to this website:&nbsp; 
-                  <Link href="https://password-strength-checker-one.vercel.app/" passhref className="text-blue-600 font-semibold font-sans hover:underline">
+                  <Link href="https://password-strength-checker-one.vercel.app/" passHref className="text-blue-600 font-semibold font-sans hover:underline">
                     Password Strength Checker
                   </Link>
                 </Label>
