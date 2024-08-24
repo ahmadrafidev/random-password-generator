@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -98,6 +99,14 @@ export default function RandomPasswordGenerator() {
               <div className="flex mt-1">
                 <Input id="generated-password" value={password} readOnly className="flex-grow" />
                 <Button onClick={copyToClipboard} className="ml-2">Copy</Button>
+              </div>
+              <div className="mt-2">
+                <Label htmlFor="generated-password">
+                  Needed to check your password strength? Go to this website:&nbsp; 
+                  <Link href="https://password-strength-checker-one.vercel.app/" passhref className="text-blue-600 font-semibold font-sans hover:underline">
+                    Password Strength Checker
+                  </Link>
+                </Label>
               </div>
             </div>
           )}
