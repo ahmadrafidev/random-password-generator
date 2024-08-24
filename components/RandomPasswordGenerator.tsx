@@ -49,6 +49,10 @@ export default function RandomPasswordGenerator() {
     toast.success('Password copied to clipboard!')
   }
 
+  const handleCheckboxChange = (setter: React.Dispatch<React.SetStateAction<boolean>>) => (checked: boolean | 'indeterminate') => {
+    setter(checked === true)
+  }
+  
   return (
     <Card className="w-full max-w-md mx-auto">
       <CardHeader>
@@ -71,19 +75,19 @@ export default function RandomPasswordGenerator() {
           <div className="space-y-2">
             <Label>Include:</Label>
             <div className="flex items-center space-x-2">
-              <Checkbox id="uppercase" checked={includeUppercase} onCheckedChange={setIncludeUppercase} />
+              <Checkbox id="uppercase" checked={includeUppercase} onCheckedChange={handleCheckboxChange(setIncludeUppercase)} />
               <Label htmlFor="uppercase">Uppercase</Label>
             </div>
             <div className="flex items-center space-x-2">
-              <Checkbox id="lowercase" checked={includeLowercase} onCheckedChange={setIncludeLowercase} />
+              <Checkbox id="lowercase" checked={includeLowercase} onCheckedChange={handleCheckboxChange(setIncludeLowercase)} />
               <Label htmlFor="lowercase">Lowercase</Label>
             </div>
             <div className="flex items-center space-x-2">
-              <Checkbox id="numbers" checked={includeNumbers} onCheckedChange={setIncludeNumbers} />
+              <Checkbox id="numbers" checked={includeNumbers} onCheckedChange={handleCheckboxChange(setIncludeNumbers)} />
               <Label htmlFor="numbers">Numbers</Label>
             </div>
             <div className="flex items-center space-x-2">
-              <Checkbox id="symbols" checked={includeSymbols} onCheckedChange={setIncludeSymbols} />
+              <Checkbox id="symbols" checked={includeSymbols} onCheckedChange={handleCheckboxChange(setIncludeSymbols)} />
               <Label htmlFor="symbols">Symbols</Label>
             </div>
           </div>
@@ -104,4 +108,4 @@ export default function RandomPasswordGenerator() {
   )
 }
 
-RandomPasswordGenerator.displayName="RandomPasswordGenerator"
+RandomPasswordGenerator.displayName = "RandomPasswordGenerator"
